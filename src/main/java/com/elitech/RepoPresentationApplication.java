@@ -50,6 +50,11 @@ System.out.println("recherche par tel:");
 	System.out.println("recherche par nom ou prenom:");
 	parcours(employeeRepository.findByNomOrPrenom("user2", "updated user1"));
 	
+	System.out.println("Recherche des livre");
+	parcourir(livreRepository.findByPrixLessThan(3000));
+	
+	
+	
 	}
 	public void parcours(List<Employee> maliste)
 	
